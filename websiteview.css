@@ -234,4 +234,15 @@ nav .fa{
 .row{
 	flex-direction: column;
 }
+#alert{
+	font-size: 20px;
+	width: 200px;
+	left: 30px;
+	height: 25vh;
+	bottom: 450px;
+	padding: 50px;
+}
+#alert h1{
+	font-size: 30px;
+}
 }
