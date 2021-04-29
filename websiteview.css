@@ -1,0 +1,237 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://i.pinimg.com/originals/a0/5a/50/a05a50b78e78669c98adaa38c50eb149.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	width: 80px;
+	height: 80px;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 13px;
+}
+.nav-links ul li::after{
+content: "";
+width: 0%;
+height: 2px;
+background: #f44336;
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+#alert{
+	background: yellow;
+	color: black;
+	padding: 100px;
+	height: 50%;
+	width: 50%;
+	margin: auto;
+	position: fixed;
+	align-content: center;
+	border-radius: 25px;
+	border:3px solid black;
+	left: 200px;
+	bottom: 50px;
+	z-index: 600;
+	text-align: center;
+}
+#alert h1{
+	color: red;
+	border:3px solid red;
+	font-size: 100px;
+	margin: auto;
+	text-align: center;
+}
+.close{
+	top:10px;
+	border:2px solid black;
+	padding: 12px 34px;
+	background-color: white;
+	color: black;
+	font-family: JasmineUPC;
+	font-weight: 900;
+	font-size: 20px;
+	position: relative;
+	cursor: pointer;
+}
+.text-box{
+	width: 90%;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1{
+	font-size: 72px;
+}
+.text-box p{
+	margin: 10px 0 40px 0;
+	font-size: 14px;
+	color: white;
+}
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.hero-btn:hover{
+	border: 2px solid #f44336;
+background: #f44336;
+transition: 1s;
+}
+nav .fa{
+	display: none;
+}
+/*------------------------------------- Team 7 ------------------------------------*/
+
+#team7{
+	margin: auto;
+	width: 50%;
+	padding: 0 100px 100px 100px;
+}
+.team7{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.team7 h1{
+	font-size: 42px;
+	font-weight: 600;
+}
+.team7 p{
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+
+}
+.teamcol{
+	flex-basis: 31%;
+	background: #fff3f3;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	transition: 0.5s;
+}
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.teamcol:hover{
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+/*-----------------------------------------Training-------------------------------------------*/
+
+.training{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.training h1{
+	font-size: 42px;
+	font-weight: 600;
+}
+.sensei{
+	flex-basis: 80%;
+	background: #fff3f3;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	transition: 0.5s;
+}
+.sensei:hover{
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+.sen{
+	margin: auto;
+	width: 30%;
+	padding: 15px 0;
+}
+
+/*---------------------------------- Small screen view ---------------------------------------*/
+
+@media(max-width: 700px){
+.text-box h1{
+	font-size: 40px;
+}
+.nav-links ul li{
+	display: block;
+}
+.nav-links{
+	position: absolute;
+	background: #f44336;
+	height: 100vh;
+	width: 150px;
+	top: 0;
+	right: -150px;
+	text-align: left;
+	z-index: 2;
+	transition: 1s;
+}
+nav .fa{
+	display: block;
+	color: #fff;
+	margin: 10px;
+	font-size: 22px;
+	cursor: pointer;
+}
+.nav-links ul{
+	padding: 30px;
+}
+.nav-links ul li::after{
+	background: white;
+}
+.row{
+	flex-direction: column;
+}
+}

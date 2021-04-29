@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WEBSITE</title>
+	<link rel="stylesheet" type="text/css" href="websiteview.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+
+<section class="header">
+	
+<nav>
+	
+<a href="websiteview.html"><img src="https://i.pinimg.com/736x/25/9b/28/259b28acf817813dd8b15f05726bd339.jpg"></a>
+<div class="nav-links" id="navLinks">
+	<i class="fa fa-times" onclick="hideMenu()"></i>
+	<ul>
+		<li><a href="">HOME</a></li>
+		<li><a href="">ABOUT</a></li>
+		<li><a href="">BLOG</a></li>
+		<li><a href="">CONTACT</a></li>
+		<li><a href="">T&C</a></li>
+	</ul>
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<div id="alert">
+	<h1>SPOILERS<br>ALERT</h1>
+	<p>This page contain spoilers</p>
+	<button class="close" onclick="document.getElementById('alert').style.display='none'" >CONTINUE</button>
+</div>
+<div class="text-box">
+	<h1>NARUTO</h1>
+<p>I never go back on my words. That's my nindo, my ninja way.<br>Believe it!</p>
+<a href="" class="hero-btn">Visit us to know more</a>
+</div>
+
+</section>
+<!--------------------------------------------------- Team 7 ------------------------------------------------------------>
+
+<section class="team7">
+	
+<h1>TEAM 7</h1>
+<p>Naruto is assigned to team 7</p>
+<img src="https://vignette.wikia.nocookie.net/naruto/images/5/50/Team_Kakashi.png/revision/latest?cb=20161219035928" id="team7">
+<div class="row">
+	<div class="teamcol">
+		<h3>Kakashi Hatake</h3>
+		<p>Kakashi Hatake is the easygoing, smart leader of team 7. Kakashi had a dark past, but he didn't let that affect him as an adult. He was a very vital key for Naruto's success, training him to be a great ninja.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="teamcol">
+		<h3>Sasuke Uchiha</h3>
+		<p>Sasuke Uchiha is Naruto's rival. He was designed by Kishimoto as the "cool genius" since he felt this was an integral part of an ideal rivalry. Sasuke's older brother, Itachi Uchiha, killed the rest of their family. Because of this, Sasuke's sole desire is to kill his brother, and he develops a cold and withdrawn personality, seeing people as tools to further his goals, although also gaining the affection of most of the girls he knows, much to his annoyance.</p>
+	</div>
+	<div class="teamcol">
+		<h3>Sakura Haruno</h3>
+		<p>Sakura is infatuated with Sasuke and resents Naruto Uzumaki, although Sasuke views her as "annoying" and Naruto has feelings for her. Her perception on Naruto eventually changes, however, and she comes to see him as a friend, while her feelings for Sasuke grow into deep love.</p>
+	</div>
+	<div class="teamcol">
+		<h3>Naruto Uzumaki</h3>
+		<p>He compensates for this with his cheerful and boisterous personality, vowing to never give up on any goal he sets.He is often ridiculed by the Konohagakure villagers, as he is the host of Kurama, the Nine-Tailed Fox that attacked Konoha. In particular, Naruto has ambitions of becoming Hokage, the leader of Konohagakure, to gain the villagers' respect and be able to protect both them and the world.</p>
+	</div>
+</div>
+
+</section>
+
+<!-- ----------------------------------------------Training------------------------------------------------------ -->
+
+<section class="training">
+	
+<h1>Gutsy Master and Student: The Training</h1>
+<div class="row">
+	<div class="sensei">
+		<h3>Master Jiraiya(Pervy Sage)</h3>
+		<img src="https://pbs.twimg.com/media/C7vSO5TU8AA3pSR.jpg" class="sen">
+		<p>Jiraiya was one of The Three Legendary Sannins. Famed as a hermit and pervert of stupendous ninja skill. Jiraiya takes the time to train Naruto, teaching him Rasengan and his own signature abilities like summoning techniques and trying to help him learn how to control Kurama. After Naruto's flawed attempt to retrieve Sasuke Uchiha, Jiraiya decides to take the boy for two and a half years of training to make him strong enough to bring Sasuke back and to protect himself from the Akatsuki organization.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="sensei">
+		<h3>Kakashi Sensei</h3>
+		<img src="https://i.ytimg.com/vi/kAAkkmkRSbQ/maxresdefault.jpg" class="sen">
+		<p></p>
+	</div>
+</div>
+
+
+</section>
+
+<!------------------------------------------------- javaScript ---------------------------------------------------------->
+
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right="0";
+	}
+	function hideMenu(){
+		navLinks.style.right="-150px";
+	}
+</script>
+</body>
+</html>
